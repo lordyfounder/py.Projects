@@ -1,6 +1,6 @@
 import cv2 as cv
 
-image = cv.imread("C:\\Users\\Chinmay\\OneDrive\\Desktop\\image\\abhi3.jpeg")
+image = cv.imread("C:\\Users\\Chinmay\\OneDrive\\Desktop\\image\\unnamed.jpg")
 gray_image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 invert_image = cv.bitwise_not(gray_image)
 blur_image = cv.GaussianBlur(invert_image, (21,21), 0)
